@@ -1,0 +1,76 @@
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white; /* Light mode background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.checkout-container.dark {
+    background-color: #1c1c1c; /* Dark mode background */
+    color: white; /* Dark mode text color */
+}
+
+.payment-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Space between label and input */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light input background */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkout-container.dark .form-group input {
+    background-color: #333; /* Dark input background */
+    border-color: #555; /* Dark input border */
+}
+
+.cart-summary {
+    margin-bottom: 30px; /* Added space between the total amount and the checkout button */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.terms {
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.checkout-button {
+    background-color: #fea928;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px; /* Added space to move checkout button downwards */
+}
+
+.checkout-button:hover {
+    background-color: #ed8900;
+}
